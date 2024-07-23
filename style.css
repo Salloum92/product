@@ -174,4 +174,57 @@ a {
 }  
 .control .control-bottom:hover i {
     color: #333333;
-}              
+}     
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 1200px) {
+    .slideshow .slideshow-left, .slideshow .slideshow-right {
+        width: 100%;
+        height: auto;
+    }
+    .slideshow .slideshow-left {
+        height: 50%;
+    }
+    .slideshow .slideshow-right {
+        height: 50%;
+    }
+    .control {
+        left: 50%;
+        top: 90%;
+        transform: translateX(-50%);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .slideshow .Lslide-content h2 {
+        font-size: 40px;
+    }
+    .slideshow .Lslide-content p {
+        padding: 1.5em 0em;
+    }
+    .slideshow .Lslide-content .button p {
+        padding: 0.8em 5em 0.8em 1.5em;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .slideshow .Lslide-content h2 {
+        font-size: 30px;
+    }
+    .slideshow .Lslide-content p {
+        padding: 1em 0em;
+    }
+    .slideshow .Lslide-content .button p {
+        padding: 0.8em 3em 0.8em 1.5em;
+        font-size: 8px;
+    }
+    .control {
+        left: 50%;
+        top: 95%;
+        transform: translateX(-50%);
+    }
+    .control .control-top, .control .control-bottom {
+        width: 35px;
+        height: 40px;
+    }
+}
